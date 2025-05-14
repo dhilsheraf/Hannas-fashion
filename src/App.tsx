@@ -1,8 +1,16 @@
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
+import Home from './pages/Home'
+
 const App = () => {
   return (
-    <div>
-      <h1>Welcome to hannas fashion its starting from here</h1>
-    </div>
+    <>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+    </Router>
+    </>
+
   )
 }
 
